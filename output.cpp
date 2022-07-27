@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -7,7 +8,7 @@ void clearScreen()
   cout << "\033[2J\033[1;1H";
 }
 
-int main()
+int printString(int atividade)
 {
   clearScreen();
 
@@ -21,7 +22,7 @@ int main()
   cout << "\n\n";
 
   cout << "╔══════════════════════════════════════╗\n";
-  cout << "║ Atividade 1                          ║\n";
+  cout << "║ Atividdade " << atividade << "\t\t\t       ║\n";
   cout << "╚══════════════════════════════════════╝\n";
 
   cout << "\n\n";
