@@ -77,11 +77,18 @@ int main()
   for (int i = 4; i >= 0; i--)
   {
     pushToQueue(queue, stack->list[i]);
+    stack->list[i] = 0;
   }
 
   cout << "Elementos da fila: \n";
   for (int i = 0; i < 5; i++)
   {
     cout << i << " - " << queue->list[i] << endl;
+  }
+  cout << "Elementos pilha: \n";
+
+  for (int i = 0; i < 5; i++)
+  {
+    cout << i << " - " << stack->list[i] << endl;
   }
 }
